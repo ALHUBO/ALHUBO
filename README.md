@@ -31,9 +31,9 @@
 ### 🔧Tools: 
 <div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" height="50px"/>
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/jquery.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
 </div>
 <!--
 **ALHUBO/ALHUBO** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
