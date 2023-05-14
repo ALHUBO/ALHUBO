@@ -8,10 +8,33 @@
 
 ### 💻About me:
 - 😁 I like to teach other students and people about topics I have learned.
-- 🤖 I'm very passionate about learning new technologies. I am currently learning about Cybersecurity, Ethical Hacking and CCNA (Cisco Certified Networking Associate) certification.
+- 🤖 I'm very passionate about learning new technologies. I'm currently learning about Cybersecurity, Ethical Hacking and CCNA (Cisco Certified Networking Associate) certification.
 - 😻 I have loved programming since I was a child.
 - 🎓 I'm currently studying my last year in computer engineering at the School of Electrical Engineering at the Universidad Michoacana de San Nicolás de Hidalgo.
 
+### 🔨Programming languages:
+<div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/C.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/js2.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/C++.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/C%23.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/python.png" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/php.png" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/Java-Logo.png" height="50px"/>
+</div>
+
+### 🔧Tools: 
+<div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
+</div>
 <!--
 **ALHUBO/ALHUBO** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
