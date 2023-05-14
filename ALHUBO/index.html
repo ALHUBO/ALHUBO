@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALHUBOWeb</title>
+    <style>
+        body {
+            background-image: url('./IMG/BackGround.webp');
+            background-repeat: repeat;
+            background-size: 50%;
+        }
+
+        header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            width: 100%;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 39%, rgba(241, 241, 241, 1) 100%);
+            border-bottom: solid 0.6vh #f1f1f1;
+        }
+
+        header div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {}
+
+        article {}
+
+        aside {
+            position: fixed;
+            left: 0px;
+            top: 10vh;
+            z-index: 101;
+            background-color: #fff;
+            width: 15vw;
+            transform: translateX(0vw);
+            height: 81vh;
+            transition: 0.2s;
+
+            border-right: solid 1vh #000;
+            border-bottom: solid 1vh #000;
+            border-bottom-right-radius: 16px;
+            border-top-right-radius: 16px;
+            display: grid;
+            grid-template-rows: 1fr 0fr;
+            overflow-y: auto;
+        }
+
+        aside .Opts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .aside_close {
+            transform: translateX(-18vw);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .logoWeb {
+            height: 9vh;
+            border-radius: 2vh;
+            outline: solid #000 0.3vh;
+        }
+
+        .contentBell {
+            border-right: solid 0.4vh #cacaca;
+            padding-right: 3vh;
+        }
+
+        .contentBell img {
+            height: 5vh;
+
+        }
+
+        .userPick {
+            height: 9.5vh;
+            margin-left: 1.5vh;
+        }
+
+        .OptMenu {
+            width: 80%;
+            font-size: 3.3vh;
+            padding: 1vh 0.5vw;
+            margin: 2vh 0vw;
+            transition: 0.2s;
+            color: #717171;
+            cursor: pointer;
+        }
+
+        .OptMenu:hover {
+            background-color: #ff006c24;
+            border-radius: 10px;
+            padding: 1.5vh 0.5vw;
+            font-size: 3.4vh;
+            color: #ff006c;
+        }
+
+        .OptMenu_active {
+            background-color: #c7ff0045;
+            border-radius: 10px;
+            padding: 1.5vh 0.5vw;
+            color: #7a9d00;
+            font-weight: 900;
+        }
+
+        .BackContent {
+            position: fixed;
+            left: 15vw;
+            top: 10vh;
+            z-index: 90;
+            height: 78vh;
+            width: 85vw;
+            transition: 0.2s;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            padding: 6vh 0vw;
+        }
+
+        .BackContent_active {
+            left: 0vw;
+            width: 100vw;
+        }
+
+        #Terminal {
+            background-color: #000;
+            width: 80%;
+            height: 90%;
+            outline: solid #000 1vh;
+            border-radius: 10px;
+            transition: 0.5s;
+            transform: rotateY(0deg);
+            color: #fff;
+            padding: 2vh 1vw;
+            overflow-y: auto;
+            box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+            -webkit-box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+            -moz-box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+        }
+
+        #ContentWeb {
+            background-color: #fff;
+            width: 90%;
+            height: 200vh;
+            outline: solid #000 1vh;
+            border-radius: 10px;
+            transition: 0.5s;
+            transform: rotateY(90deg);
+        }
+
+        .LeFoot {
+            text-align: center;
+        }
+
+        .LeFoot div:first-child {
+            font-weight: 900;
+        }
+
+        .LeFoot div:nth-child(2) {
+            color: #797979;
+        }
+
+        #commandTerm {}
+
+        #commandTerm input {
+            width: 70%;
+            border: none;
+            background: none;
+            color: #fff;
+            outline: none;
+        }
+
+        #bttn_term {
+            position: fixed;
+            bottom: 2vh;
+            right: 2vw;
+            z-index: 110;
+            transition: 0.2s;
+        }
+
+        #bttn_term:hover {
+            bottom: 1.5vh;
+            right: 1.75vw;
+        }
+
+        #bttn_term img {
+            width: 5vw;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        #bttn_term img:hover {
+            width: 5.5vw;
+        }
+
+        #loginGUI {
+            background-color: #fff;
+            border: solid 0.5vh #000;
+            border-radius: 10px;
+            width: 40%;
+            height: 80%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div><img class="logoWeb" src="./IMG/ALHUBO.webp" /></div>
+        <div></div>
+        <div>
+            <div class="contentBell"><img src="./IMG/Bell.webp" /></div>
+            <div>
+                <img class="userPick" src="./IMG/spr_hamster_user.png" />
+                ALHUBO
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                    style="color: #cacaca; margin-left: 1vh;" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <aside class="aside_close">
+        <div class="Opts">
+            <div class="OptMenu OptMenu_active">Inicio</div>
+            <div class="OptMenu">Perfil</div>
+            <div class="OptMenu">Cursos</div>
+            <div class="OptMenu"></div>
+            <div class="OptMenu"></div>
+        </div>
+        <div class="LeFoot">
+            <div>V0.0.1</div>
+            <div>ALHUBO &copy;</div>
+
+        </div>
+    </aside>
+    <div class="BackContent BackContent_active" style="align-items: center;transform: translateX(-100vw);">
+        <div id="loginGUI">
+            Hola Mundo!!!
+        </div>
+    </div>
+    <div class="BackContent BackContent_active">
+        <div id="ContentWeb">
+            Hola Mundo!!!
+        </div>
+    </div>
+    <div id="BackTerminal" class="BackContent BackContent_active">
+        <div id="Terminal">
+            <div id="HistoryTerm">
+            </div>
+            <div id="commandTerm">
+                <span id="groupTerm"><span style="color:#6fb80f;">alhubo@alhuboweb</span><span
+                        style="font-weight: 900;">:</span><span style="color:#007cff;font-weight: 900;"> ~ </span>$
+                </span>
+                <input id="inCMD" type="text" />
+            </div>
+        </div>
+    </div>
+    <div id="bttn_term"><img src="./IMG/terminal.png" /></div>
+</body>
+<script src="./JS/jquery-3.6.0.min.js"></script>
+<script>
+    var system = {
+        pwd: -1,
+        store: {},
+        puntero: {},
+        window: 'terminal',//terminal|web|login
+        menu: false,
+        terminal: {
+            status: true,
+            can: true,
+            home: '/ALHUBOweb/'
+        },
+        daemon: {
+            'web': {
+                active: false
+            }
+        },
+        user: {
+            id: 0,
+            name: 'ALHUBO',
+            group: 'ALHUBOWeb'
+        },
+        cmd: {
+            'start': {
+                argc: [1],
+                argv: ['web'],
+                flag: { '--true': { g: 1, a: false }, '-t': { g: 1, a: false }, '--false': { g: 1, a: false }, '-f': { g: 1, a: false }, '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tInicia un Demonio'
+            },
+            'toggle': {
+                argc: [1],
+                argv: ['terminal', 'menu'],
+                flag: { '--true': { g: 1, a: false }, '-t': { g: 1, a: false }, '--false': { g: 1, a: false }, '-f': { g: 1, a: false }, '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tCambia o establece el estado entre una propiedad de la web'
+            },
+            'clear': {
+                argc: [],
+                argv: [],
+                flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tLimpia la terminal'
+            },
+            'cls': {
+                argc: [],
+                argv: [],
+                flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tLimpia la terminal'
+            },
+            'mkdir': {
+                argc: [-1],
+                argv: [],
+                flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tLimpia la terminal'
+            },
+            'pwd': {
+                argc: [],
+                argv: [],
+                flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+                help: '\tLimpia la terminal'
+            }
+        }
+    };
+    $(document).ready(() => {
+        setTimeout(()=>{
+            $('#inCMD').val('start web&toggle menu&toggle terminal')
+        },500);
+        setTimeout(()=>{
+            exec({ vr_cmd: 'start web&toggle menu&toggle terminal' });
+        },1000);
+        //exec({ vr_cmd: '     mkdir -p   3      -g      asd     sd     sd --help' });
+    });
+
+    function Toggle2Terminal() {
+        if (system.terminal.can) {
+            if (system.window == 'terminal' || system.window == 'web') {
+                system.terminal.can = false;
+                system.terminal.status = !system.terminal.status;
+                if (system.terminal.status) {
+                    printT('Se abrio la terminal');
+                    $('#ContentWeb').css({ transform: 'rotateY(-90deg)' });
+                    $('#BackTerminal').css({ display: 'flex' });
+                    setTimeout(() => {
+                        $('#ContentWeb').css({ display: 'none' });
+                        $('#Terminal').css({ transform: 'rotateY(0deg)' });
+                        system.terminal.can = true;
+                        $("#Terminal").animate({ scrollTop: parseInt($('#Terminal')[0].scrollHeight + $('#Terminal').height()) }, 10);
+                    }, 500);
+
+                } else {
+                    printT('Se cerro la terminal');
+                    $('#Terminal').css({ transform: 'rotateY(90deg)' });
+                    $('#ContentWeb').css({ display: 'flex' });
+                    setTimeout(() => {
+                        $('#BackTerminal').css({ display: 'none' });
+                    }, 500);
+                    setTimeout(() => {
+                        $('#ContentWeb').css({ transform: 'rotateY(0deg)' });
+                        system.terminal.can = true;
+                    }, 500);
+                }
+                actvTerm(true);
+            } else {
+                exec({ vr_cmd: 'login --gui --out' });
+            }
+        }
+
+    }
+    function ToggleMenu() {
+        system.menu = !system.menu;
+        if (system.menu) {
+            printT('Se abrio el menu.');
+            $('aside').removeClass('aside_close');
+            $('.BackContent').removeClass('BackContent_active');
+        } else {
+            printT('Se cerro el menu.');
+            $('aside').addClass('aside_close');
+            $('.BackContent').addClass('BackContent_active');
+        }
+        actvTerm(true);
+    }
+    function parseCmd(vr_cmd) {
+        let full = { str: '', cmd: '', argv: {}, flags: {}, echo: '', exist: false, syntax: true };
+        full.str = vr_cmd;
+        vr_cmd = vr_cmd.replace(/[ ]+/g, ' ');
+        vr_cmd = (vr_cmd[vr_cmd.length - 1] == ' ') ? vr_cmd.substring(0, vr_cmd.length - 1) : vr_cmd;
+        if (vr_cmd[0] == ' ') vr_cmd = vr_cmd.substring(1);
+        vr_cmd = vr_cmd.split(' ');
+        full.exist = (system.cmd[vr_cmd[0]]) ? true : false;
+        if (full.exist) {
+            let flagsG = [];
+            let flagOpen = false;
+            let leflag = '';
+            for (let i in vr_cmd) {
+                if (i > 0)
+                    if (vr_cmd[i].substring(0, 2) == '--' || vr_cmd[i].substring(0, 1) == '-') {
+                        if (typeof (flagOpen) === 'object') {
+                            print('flag open')
+                            full.syntax = '\tUna bandera se quedo esperando parametro.';
+                            flagOpen = false;
+                        }
+                        if (!system.cmd[vr_cmd[0]].flag[vr_cmd[i]]) {
+                            full.syntax = '\tNo existe la bandera [' + vr_cmd[i] + ']';
+                        } else if (flagsG.includes(system.cmd[vr_cmd[0]].flag[vr_cmd[i]].g)) {
+                            full.syntax = '\tNo se puede utilizar la bandera [' + vr_cmd[i] + ']';
+                        } else {
+                            flagsG.push(system.cmd[vr_cmd[0]].flag[vr_cmd[i]].g);
+                            flagOpen = system.cmd[vr_cmd[0]].flag[vr_cmd[i]].a;
+                            leflag = vr_cmd[i];
+                        }
+                        full.flags[vr_cmd[i]] = '';
+                    } else {
+                        if (typeof (flagOpen) === 'object') {
+                            if (Object.keys(flagOpen).length == 0) {
+                                full.flags[leflag] = vr_cmd[i];
+                            } else if (flagOpen.includes(vr_cmd[i])) {
+                                full.flags[leflag] = vr_cmd[i];
+                            } else {
+                                full.syntax = '\t[' + vr_cmd[i] + '] no es un parametro aceptado por la bandera ';
+                            }
+                            flagOpen = false;
+                        } else full.argv[Object.keys(full.argv).length] = vr_cmd[i];
+                    }
+            }
+            if (typeof full.syntax == "boolean") {
+                if (system.cmd[vr_cmd[0]].argc.length == 0 && Object.keys(full.argv).length > 0) full.syntax = '\tEl comando no recibe argumentos';
+                else if (!flagsG.includes(0) && system.cmd[vr_cmd[0]].argc.length > 0 && !system.cmd[vr_cmd[0]].argc.includes(Object.keys(full.argv).length)) full.syntax = '\tEl numero de argumentos ingresados no es correcto';
+
+                if (system.cmd[vr_cmd[0]].argc.length == 1 && parseInt(system.cmd[vr_cmd[0]].argc[0]) < 0 && parseInt(system.cmd[vr_cmd[0]].argc[0]) * -1 <= Object.keys(full.argv).length) {
+                    full.syntax = true;
+                }
+                if (typeof (flagOpen) === 'object') full.syntax = '\tUna bandera se quedo esperando parametro.';
+                if (flagsG.includes(0) && (flagsG.length > 1 || Object.keys(full.argv).length > 0)) full.syntax = '\tLa bandera --help solo se puede utilizar sola sin parametros ni argumentos';
+            }
+            full.cmd = vr_cmd[0];
+
+
+            let neoP = true, word = { i: -1, f: -1 };
+            let tmpStr = full.str + ' ';
+            let cmdis = false;
+            let flgOpn = '';
+            for (let i = 0; i < tmpStr.length; i++) {
+                if (neoP) word.i = i;
+                if (tmpStr[i] == ' ') {
+                    word.f = i;
+                    let wrdI = tmpStr.substring(0, word.i), wrdM = tmpStr.substring(word.i, word.f), wrdF = tmpStr.substring(word.f);
+                    if (wrdM.length > 0) {
+
+                        if (!cmdis) {//is comand
+                            cmdis = true;
+                            let neoS = '<span style="color:#9dff00;font-weight: 600;">' + wrdM + '</span>'
+                            tmpStr = wrdI + neoS + wrdF;
+                            i = i + (neoS.length - wrdM.length);
+                        } else if (wrdM[0] == '-') {//is flag
+                            let neoS = '<span style="color:#b70a4b;font-weight: 600;">' + wrdM + '</span>';
+                            tmpStr = wrdI + neoS + wrdF;
+                            i = i + (neoS.length - wrdM.length);
+                            flgOpn = full.flags[wrdM];
+                        } else if (flgOpn) {
+                            if (flgOpn == wrdM) {
+                                let neoS = '<span style="color:#b5901e;font-weight: 600;">' + wrdM + '</span>';
+                                tmpStr = wrdI + neoS + wrdF;
+                                i = i + (neoS.length - wrdM.length);
+                            } else {
+                                flgOpn = '';
+                            }
+                        }
+                    }
+
+                }
+                neoP = (tmpStr[i] == ' ') ? true : false;
+            }
+
+            tmpStr = tmpStr.substring(0, tmpStr.length - 1);
+            let tagOpen = false;
+            for (let i = 0; i < tmpStr.length; i++) {
+                if (!tagOpen && tmpStr[i] == '<') tagOpen = true;
+                else if (tagOpen && tmpStr[i] == '>') tagOpen = false;
+                let wrdI = tmpStr.substring(0, i), wrdF = tmpStr.substring(i + 1);
+
+                if (!tagOpen && tmpStr[i] == ' ') {
+                    let neoS = '&nbsp;';
+                    tmpStr = wrdI + neoS + wrdF;
+                    i = i + 5;
+                }
+            }
+            full.echo = tmpStr;
+        } else {
+            full.echo = full.str;
+        }
+        return full;
+    }
+    function parseCmdS(vr_cmd) {
+        let rt = {};
+        let other = '';
+        if (vr_cmd.indexOf('&') == -1)
+            rt[Object.keys(rt).length] = vr_cmd;
+        else {
+
+            while (vr_cmd.indexOf('&') != -1) {
+                rt[Object.keys(rt).length] = vr_cmd.substring(0, vr_cmd.indexOf('&'));
+                vr_cmd = vr_cmd.substring(vr_cmd.indexOf('&') + 1);
+            }
+            rt[Object.keys(rt).length] = vr_cmd;
+        }
+
+        for (let i in rt) {
+            rt[i] = parseCmd(rt[i]);
+        }
+
+        return rt;
+    }
+    function startCMD(vr_cmd) {
+        if (Object.keys(vr_cmd.argv).length != 1) {
+            printT('start solo recibe un argumento');
+            actvTerm(true);
+            return;
+        }
+        if (system.daemon[vr_cmd.argv[0]])
+            if (!system.daemon[vr_cmd.argv[0]].active) {
+                system.daemon[vr_cmd.argv[0]].active = true;
+                if (vr_cmd.argv[0] == 'web') {
+                    let f = new Date();
+                    $('.LeFoot div:nth-child(2)').html('ALHUBO &copy; ' + f.getFullYear());
+
+                    $("#inCMD").keyup((e) => {
+                        if (e.keyCode == 13)
+                            exec({ vr_cmd: $(e.target).val() });
+                    });
+                    $('#Terminal').click(() => {
+                        $('#inCMD').focus();
+                    });
+                    $('#bttn_term').click(() => {
+                        exec({ vr_cmd: 'toggle terminal' });
+                    });
+                    //actvTerm(true);
+                    printT('Se inicio correctamente el demonio [ ' + vr_cmd.argv[0] + ' ]');
+                    exec({ vr_cmd: 'mkdir ALHUBOweb&mkdir usr', printo: false });
+                }
+                
+            } else {
+                printT('Ya esta iniciado el demonio [ ' + vr_cmd.argv[0] + ' ]');
+                actvTerm(true);
+            }
+        else{
+            printT('no se reconoce el demonio [ ' + vr_cmd.argv[0] + ' ]');
+            actvTerm(true);
+        }
+        return;
+    }
+
+    function toggleCMD(vr_cmd) {
+        if (Object.keys(vr_cmd.argv).length != 1) {
+            printT('toggle solo recibe un argumento');
+            actvTerm(true);
+            return;
+        }
+        if (vr_cmd.argv[0] == 'terminal') {
+            Toggle2Terminal();
+        } else if (vr_cmd.argv[0] == 'menu') {
+            ToggleMenu();
+        } else {
+            actvTerm(true);
+            printT('No existe [' + vr_cmd.argv[0] + ']');
+        }
+    }
+    function mkdirCMD(vr_cmd) {
+        actvTerm(true);
+
+        return;
+        if (Object.keys(vr_cmd.argv).length != 1) {
+            printT('mkdir solo recibe un argumento');
+            actvTerm(true);
+            return;
+        }
+
+        if (system.store[vr_cmd.argv[0]]) {
+            printT('Ya existe el directiorio [ ' + vr_cmd.argv[0] + ' ]');
+            actvTerm(true);
+            return;
+        }
+        let idx = Object.keys(system.store).length;
+        system.store[vr_cmd.argv[0]] = {
+            id: idx,
+            parent: system.pwd,
+            type: 'd',
+            permisos: {
+                u: 7,
+                g: 7,
+                o: 7
+            },
+            user: system.user.name,
+            group: system.user.group
+        }
+        system.puntero[idx] = vr_cmd.argv[0];
+        actvTerm(true);
+    }
+    function actvTerm(vr_tg) {
+        system.terminal.can = vr_tg;
+        if (system.terminal.can) $('#commandTerm').css({ display: 'block' })
+        else $('#commandTerm').css({ display: 'none' })
+    }
+    function pwdCMD(printo) {
+        let pwd = '/';
+        let tmp = system.pwd;
+        if (tmp != -1) {
+            if (system.puntero[tmp]) {
+                pwd = system.puntero[tmp] + pwd;
+                while (tmp != -1) {
+                    tmp = system.store[system.puntero[tmp]].parent;
+                    if (tmp == -1) pwd = '/' + pwd; else pwd = system.puntero[tmp] + pwd;
+                }
+            } else {
+                pwd = '*error*!';
+            }
+        }
+        if (printo) printT(pwd);
+        actvTerm(true);
+        return pwd;
+    }
+    function exec({ vr_cmd = '', printo = true }) {
+        if (system.terminal.can) {
+            actvTerm(false);
+            $('#inCMD').val('');
+            let full = parseCmdS(vr_cmd);
+            if (printo) printT(full);
+            $("#Terminal").animate({ scrollTop: parseInt($('#Terminal')[0].scrollHeight + $('#Terminal').height()) }, 10);
+            if (!(Object.keys(full).length == 1 && ![...full[0].str.matchAll(/[\d\w]+/g)].length)) {
+                for (let i in full) {
+                    if (full[i].exist) {
+                        if (full[i].syntax !== true) {
+                            if (typeof full[i].syntax === "string") {
+                                printT(full[i].syntax);
+                            } else {
+                                printT('\tError desconocido al ejecutar el comando');
+                            }
+                        } else {
+                            if (full[i].flags['-h'] !== undefined || full[i].flags['--help'] !== undefined) {
+                                printT(system.cmd[full[i].cmd].help);
+                            } else {//execute
+                                if (full[i].cmd == 'start') {
+                                    startCMD(full[i]);
+                                } else if (full[i].cmd == 'toggle') {
+                                    system.terminal.can = true;
+                                    toggleCMD(full[i]);
+                                } else if (full[i].cmd == 'clear' || full[i].cmd == 'cls') {
+                                    actvTerm(true);
+                                    if (Object.keys(full[i].argv).length == 0)
+                                        $('#HistoryTerm').html('');
+                                    else
+                                        printT('[ ' + full[i].cmd + ' ] no recibe argumentos');
+
+                                } else if (full[i].cmd == 'mkdir') {
+                                    mkdirCMD(full[i]);
+                                } else if (full[i].cmd == 'pwd') {
+                                    pwdCMD(true);
+                                } else {
+                                    actvTerm(true);
+                                    printT('<div>No se ejecuto el comando correctamente: [ ' + full[i].cmd + ' ]</div>');
+                                }
+                            }
+                        }
+                        
+                    } else if (full[i].cmd.length > 0) {
+                        actvTerm(true);
+                        printT('<div>No se reconoce el comando o ejecutable: [ ' + full[i].cmd + ' ]</div>');
+                    }
+                }
+            }
+            actvTerm(true);
+        }
+    }
+    function printT(vr_cmd) {
+        let befCmd = '<span style="color:#6fb80f;">' + system.user.name + '@alhuboweb</span><span style="font-weight: 900;">:[</span><span style="color:#007cff;font-weight: 900;"> ~ </span><span style="font-weight: 900;">]$</span>';
+        $('#groupTerm').html(befCmd);
+        if (typeof vr_cmd === "object") {
+            let html = '<div>' + befCmd;
+
+            for (let i in vr_cmd) {
+                if (i == 0) html += vr_cmd[i].echo;
+                else html += ' <span style="color:#007cff;font-weight: 900;">&</span> ' + vr_cmd[i].echo;
+            }
+            html += '</div>';
+            $('#HistoryTerm').append(html);
+        } else if (typeof vr_cmd === "string") {
+            $('#HistoryTerm').append('<div>' + vr_cmd + '</div>');
+        }
+
+    }
+    function print(log) {
+        console.log(log);
+    }
+
+</script>
+
+</html>
