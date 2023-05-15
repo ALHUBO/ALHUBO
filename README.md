@@ -32,23 +32,23 @@
 
 ### 🔧Tools: 
 <div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/jquery.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/react.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/mysql.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/git.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/docker.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/termlin.png" height="50px"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/termwin.png" height="50px"/>
 </div>
 
