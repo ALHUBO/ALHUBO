@@ -24,28 +24,37 @@
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/C%23.png" height="50px"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/python.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/php.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/Java-Logo.png" height="50px"/>
 </div>
 
 ### 🔧Tools: 
 <div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
-<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/jquery.png" style="background-color: #000;border-radius: 25px;" height="50px"/>
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/html.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/css.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/jquery.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/react.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/mysql.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/git.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/docker.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/termlin.png" height="50px"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ALHUBO/ALHUBO/blob/master/ALHUBO/IMG/Icons/termwin.png" height="50px"/>
 </div>
-<!--
-**ALHUBO/ALHUBO** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📚My stats:
+
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=ALHUBO&theme=merko&hide_border=true)](https://git.io/streak-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ALHUBO&layout=demo)](https://github.com/anuraghazra/github-readme-stats)
