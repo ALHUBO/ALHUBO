@@ -1,58 +1,73 @@
 /*
-Variables globales para Angie app
+Variables globales para ALHUBOWeb
 Desarrollado por ALHUBO 
 */
-
-//objetos
-
-function ListProductos(data){
-    this.data=data;
-    this.len=()=>{
-        return Object.keys(this.data).length;
-    }
-    this.forEach=(fnc)=>{
-        return Object.keys(this.data).forEach(fnc);
-    };
-    this.map=(fnc)=>{
-        return Object.keys(this.data).map(fnc);
-    };
-    this.add=(id,obj)=>{
-        this.data[id]=obj;
-        this.forEach=(fnc)=>{
-            return Object.keys(this.data).forEach(fnc);
-        };
-    }
-}
-
 //configuracion del sitio
-var webConfig={
-    Menu:{
-        open: pageMenuOpen//Default open?
+var system = {
+    pwd: -1,
+    store: {},
+    puntero: {},
+    window: 'terminal',//terminal|web|login
+    menu: {
+        state: false,
+        old: false
     },
-    Page:{
-        start: page2Load
+    login: {
+        GUI: false
     },
-    Item: itemInit,
-    sms: {},
-    Categoris: {
-
+    terminal: {
+        status: true,
+        can: true,
+        home: '/ALHUBOweb/'
     },
-    win: {}
-};
-
-//user propiedades
-var user={
-    load: false,//verifica si hay sesion [false | aun no verifica] [true | ya verifico]
-    login: false,//inicio sesion [false | invitado] [true | inicio sesion]
-    id: '',//id del usuario
-    name: ''//nombre del usuario
-};
-
-//base de datos propiedades
-var db={
-    status: false,//hay conexion?
-    load: false,//ya hizo una consulta
-    destacados: new ListProductos({})
+    daemon: {
+        'web': {
+            active: false
+        }
+    },
+    user: {
+        id: 0,
+        name: 'ALHUBO',
+        group: 'ALHUBOWeb'
+    },
+    cmd: {
+        'start': {
+            argc: [1],
+            argv: ['web'],
+            flag: { '--true': { g: 1, a: false }, '-t': { g: 1, a: false }, '--false': { g: 1, a: false }, '-f': { g: 1, a: false }, '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tInicia un Demonio'
+        },
+        'toggle': {
+            argc: [1],
+            argv: ['terminal', 'menu'],
+            flag: { '--true': { g: 1, a: false }, '-t': { g: 1, a: false }, '--false': { g: 1, a: false }, '-f': { g: 1, a: false }, '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tCambia o establece el estado entre una propiedad de la web'
+        },
+        'clear': {
+            argc: [],
+            argv: [],
+            flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tLimpia la terminal'
+        },
+        'cls': {
+            argc: [],
+            argv: [],
+            flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tLimpia la terminal'
+        },
+        'mkdir': {
+            argc: [-1],
+            argv: [],
+            flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tLimpia la terminal'
+        },
+        'pwd': {
+            argc: [],
+            argv: [],
+            flag: { '--help': { g: 0, a: false }, '-h': { g: 0, a: false } },
+            help: '\tLimpia la terminal'
+        }
+    }
 };
 
 

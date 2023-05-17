@@ -1,0 +1,95 @@
+#ALHUBONotifier {
+    position: fixed;
+    z-index: 10000;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 4vh;
+    transition: 1s;
+}
+
+
+.ALHUBONotifier_smsNotif {
+    cursor: pointer;
+    border-radius: 2vh;
+    color: #fff;
+    margin: 1vh 2vw;
+    opacity: 0;
+    transition: 1s;
+    margin-bottom: -20vh;
+    max-width: 15vw;
+}
+
+.ALHUBONotifier_smsNotif div:first-child {
+    font-size: 3.3vh;
+    font-weight: 600;
+    padding: 0.5vh 1vw;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+.ALHUBONotifier_smsNotif div:nth-child(2) {
+    font-size: 2.9vh;
+    padding: 1vh 1vw;
+    min-width: 12vw;
+}
+
+.ALHUBONotifier_smsNotif div:nth-child(3) {
+    height: 1vh;
+    border-radius: 2vh;
+    transition: 1s;
+    width: 100%;
+}
+
+.ALHUBONotifier_smsNotif_info {
+    background-color: #00acb5;
+}
+
+.ALHUBONotifier_smsNotif_info div:first-child {
+    background-color: #008188;
+
+}
+
+.ALHUBONotifier_smsNotif_info div:nth-child(3) {
+    background-color: #96ffff;
+}
+
+.ALHUBONotifier_smsNotif_error {
+    background-color: #d20000;
+}
+
+.ALHUBONotifier_smsNotif_error div:first-child {
+    background-color: #900;
+
+}
+
+.ALHUBONotifier_smsNotif_error div:nth-child(3) {
+    background-color: #ff9696;
+}
+
+.ALHUBONotifier_smsNotif_success {
+    background-color: #790;
+}
+
+.ALHUBONotifier_smsNotif_success div:first-child {
+    background-color: #516800;
+
+}
+
+.ALHUBONotifier_smsNotif_success div:nth-child(3) {
+    background-color: #deff96;
+}
+
+.ALHUBONotifier_smsNotif_warning {
+    background-color: #ff8f00;
+}
+
+.ALHUBONotifier_smsNotif_warning div:first-child {
+    background-color: #c87000;
+
+}
+
+.ALHUBONotifier_smsNotif_warning div:nth-child(3) {
+    background-color: #ffd196;
+}

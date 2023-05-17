@@ -1,0 +1,305 @@
+#backgroundWeb {
+    background-image: url('../IMG/BackGround.webp');
+    background-repeat: repeat;
+    background-size: 50%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: #FFF;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {}
+
+article {}
+
+aside {
+    position: fixed;
+    left: 0px;
+    top: 10vh;
+    z-index: 101;
+    background-color: #fff;
+    width: 15vw;
+    transform: translateX(0vw);
+    height: 81vh;
+    transition: 0.2s;
+
+    border-bottom-right-radius: 16px;
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+    overflow-y: auto;
+}
+#bttn_menu {
+    transition: 0.2s;
+    z-index: 102;
+    position: fixed;
+    top: 40vh;
+    left: 0vw;
+    padding: 1vh 0.5vw 2vh 2vw;
+    font-size: 3vh;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 40%);
+    border: none;
+    border-top-right-radius: 2.5vh;
+    border-bottom-right-radius: 2.5vh;
+    cursor: pointer;
+    transform: translateX(-2vw);
+}
+
+aside .Opts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside_close {
+    transform: translateX(-18vw);
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+.logoWeb {
+    height: 9vh;
+    border-radius: 2vh;
+    outline: solid #000 0.3vh;
+}
+
+.contentBell {
+    border-right: solid 0.4vh #cacaca;
+    padding-right: 3vh;
+    font-size: 5vh;
+    cursor: pointer;
+}
+
+
+.userPick {
+    height: 9.5vh;
+    margin-left: 1.5vh;
+}
+
+.OptMenu {
+    width: 80%;
+    font-size: 3.3vh;
+    padding: 1vh 0.5vw;
+    margin: 2vh 0vw;
+    transition: 0.2s;
+    color: #717171;
+    cursor: pointer;
+}
+
+.OptMenu:hover {
+    background-color: #ff006c24;
+    border-radius: 10px;
+    padding: 1.5vh 0.5vw;
+    font-size: 3.4vh;
+    color: #ff006c;
+}
+
+.OptMenu_active {
+    background-color: #c7ff0045;
+    border-radius: 10px;
+    padding: 1.5vh 0.5vw;
+    color: #7a9d00;
+    font-weight: 900;
+}
+
+.BackContent {
+    position: fixed;
+    left: 0vw;
+    top: 10vh;
+    z-index: 90;
+    height: 78vh;
+    width: 100vw;
+    transition: 0.2s;
+    overflow: auto;
+    justify-content: center;
+    padding: 6vh 4vw;
+}
+.BackLogin{
+    position: fixed;
+    left: 0vw;
+    top: 10vh;
+    z-index: 90;
+    height: 78vh;
+    width: 100vw;
+    transition: 0.2s;
+    overflow: auto;
+    justify-content: center;
+    padding: 6vh 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100vw);
+}
+
+#Terminal {
+    background-color: #000;
+    width: 90%;
+    height: 90%;
+    outline: solid #000 1vh;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: rotateY(0deg);
+    color: #fff;
+    padding: 2vh 1vw;
+    overflow-y: auto;
+    box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5vh 2.5vh rgba(188, 255, 0, 0.5);
+}
+
+#ContentWeb {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: rotateY(90deg);
+    padding: 4vh 1vw;
+    -webkit-box-shadow: inset 0px 0px 4vh 3vh rgb(217, 217, 217);
+    -moz-box-shadow: inset 0px 0px 4vh 3vh rgb(217, 217, 217);
+    box-shadow: inset 0px 0px 4vh 3vh rgb(217, 217, 217);
+}
+
+.LeFoot {
+    text-align: center;
+}
+
+.LeFoot div:first-child {
+    font-weight: 900;
+}
+
+.LeFoot div:nth-child(2) {
+    color: #797979;
+}
+
+#commandTerm {}
+
+#commandTerm input {
+    width: 70%;
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+}
+
+#bttn_term {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    z-index: 110;
+    transition: 0.2s;
+    font-size: 10vh;
+    cursor: pointer;
+}
+
+#bttn_term:hover {
+    bottom: 1.5vh;
+    right: 1.75vw;
+    font-size: 11vh;
+}
+#bttn_clear_term {
+    position: fixed;
+    transition: 0.2s;
+    z-index: 110;
+    cursor: pointer;
+    bottom: 0px;
+    left: 25vw;
+    background-color: #fff;
+    padding: 1vh 0.5vw 0.5vh;
+    font-size: 4.5vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+#bttn_clear_term:hover{
+    font-size: 5vh;
+    left: 24.75vw;
+}
+
+
+#loginGUI {
+    background-color: #fff;
+    border: solid 1px #d5d5d5;
+    border-radius: 4px;
+    max-width: 25%;
+    width: 30%;
+    padding: 4vh 2vw;
+    overflow: hidden;
+    
+}
+
+body{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 23%, rgb(246, 246, 246) 71%);
+}
+
+#loginGUI_tabs{
+    display: flex;
+    padding-bottom: 4vh;
+}
+
+#loginGUI_tabs div{
+    padding: 0vh 1vw 1vh 1vw;
+    font-size: 3vh;
+    cursor: pointer;
+    color: #cacaca;
+    transition: 0.2s;
+    text-align: center;
+}
+.loginGUI_tabs_active{
+    color:#7a9d00!important;
+    font-weight: 800;
+    border-bottom: solid #7a9d00 2px;
+}
+.loginGUI_tabs_input{
+    display: flex;
+    flex-direction: column;
+}
+.loginGUI_tabs_input input{
+    width: 90%;
+    font-size: 3vh;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2vh;
+}
+
+.loginGUI_tabs_input span{
+    font-size: 4vh;
+    transform: translate(-2vw,-1.7vh);
+    transition: 0.2s;
+}
+.loginGUI_tabs_input input:focus{
+    outline: none;
+}
+
+.loginGUI_tabs_input label{
+    margin-top: 2vh;
+    width: 100%;
+    font-size: 3vh;
+    color: #bebebe;
+    transform: translate(1vw,3.7vh);
+    transition: 0.2s;
+    cursor: inherit;
+}
+

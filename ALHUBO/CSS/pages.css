@@ -1,0 +1,16 @@
+.Title{
+    font-size: 6vh;
+    padding: 2vh 1vw;
+    border-bottom: solid #ddd 4px;
+    margin-bottom: 4vh;
+}
+.Title img{
+    transform: translateY(1vh);
+    height: 6vh;
+}
+.subTitle{
+
+}
+.Tema{
+
+}
