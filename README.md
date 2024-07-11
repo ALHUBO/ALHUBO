@@ -57,7 +57,7 @@
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=ALHUBO&theme=merko&hide_border=true)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ALHUBO&layout=demo)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ALHUBO)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 👾Contact:
 Gmail: [ALHUBOPC@gmail.com](mailto:ALHUBOPC@gmail.com)
